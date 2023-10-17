@@ -59,17 +59,19 @@ This project utilizes the following technologies, frameworks, and libraries:
 
 ## Contributors
 - [Yelsoju Upendra Chary](https://github.com/Upendrachary-yelsoju) - Project Member1
-- [Marada Rajeswari ](https://github.com/contributor1) -Project Member2
+- [Marada Rajeswari ] -Project Member2
 
 
-## Screenshots or Demo Links
-- [Screenshot 1](screenshot_link_1)
-- [Screenshot 2](screenshot_link_2)
-- (Add additional screenshots or demo links as needed)
+## Execution Screenshots or Demo Links
+- ![image](https://github.com/Upendrachary-yelsoju/TechRumble_Team_ReportingRockstars/assets/137254163/be17a47d-92bb-4d05-9d57-822fc9f83914)
+- ![image](https://github.com/Upendrachary-yelsoju/TechRumble_Team_ReportingRockstars/assets/137254163/1ddbf47f-2160-4ef7-921b-1e77c64ea682)
+- ![image](https://github.com/Upendrachary-yelsoju/TechRumble_Team_ReportingRockstars/assets/137254163/455e6c8e-8e9d-40eb-91fa-d640a919e4b8)
+- ![image](https://github.com/Upendrachary-yelsoju/TechRumble_Team_ReportingRockstars/assets/137254163/aa4e923e-3883-422a-abf7-984d88b9d610)
+- ![image](https://github.com/Upendrachary-yelsoju/TechRumble_Team_ReportingRockstars/assets/137254163/db2e5cf0-1d85-462d-9f94-6a4485d09e2c)
 
 ## Contact Information
 If you have questions, suggestions, or want to collaborate on this project, feel free to contact us:
-- Email: your@email.com
-- GitHub: [Your GitHub Profile](https://github.com/yourusername)
+- Email: yelsojuupendrachary@gmail.com
+- GitHub: https://github.com/Upendrachary-yelsoju
 
 
