@@ -1,0 +1,68 @@
+CREATE DATABASE newdatabase;
+
+-- The 'orders' table stores information about customer orders.
+
+CREATE TABLE orders (
+    RowVersion rowversion,              -- A column for row versioning.
+    OrderID INT IDENTITY(1,1) PRIMARY KEY, -- An auto-incremented primary key for unique order identification.
+    OrderDate DATE,                     -- The date when the order was placed.
+    Quantity INT,                       -- The quantity of products ordered.
+    TotalAmount DECIMAL(10, 2),         -- The total amount (in currency) of the order.
+    CustomerFirstName VARCHAR(255),      -- The first name of the customer.
+    CustomerLastName VARCHAR(255),      -- The last name of the customer.
+    CustomerEmail VARCHAR(255),          -- The email address of the customer.
+    ProductName VARCHAR(255),            -- The name of the product in the order.
+    ProductCategory VARCHAR(255),        -- The category to which the product belongs.
+    ProductPrice DECIMAL(10, 2),        -- The price of the product.
+    ShippingAddress VARCHAR(255),        -- The address to which the order will be shipped.
+    PaymentMethod VARCHAR(50),           -- The method of payment for the order.
+    OrderStatus VARCHAR(50),             -- The status of the order (e.g., "Shipped," "Processing").
+    OrderNotes TEXT                      -- Any additional notes or comments related to the order.
+);
+
+
+-- Insert sample data into the "orders" table
+INSERT INTO orders (OrderDate, Quantity, TotalAmount, CustomerFirstName, CustomerLastName, CustomerEmail, ProductName, ProductCategory, ProductPrice, ShippingAddress, PaymentMethod, OrderStatus, OrderNotes)
+VALUES
+    -- Row 1
+    ('2023-01-01', 3, 99.99, 'John', 'Doe', 'john@example.com', 'Laptop', 'Electronics', 599.99, '123 Main St', 'Credit Card', 'Shipped', 'No special notes'),
+
+    -- Row 2
+    ('2023-01-02', 2, 49.98, 'Jane', 'Smith', 'jane@example.com', 'T-shirt', 'Clothing', 19.99, '456 Elm St', 'PayPal', 'Processing', 'Call before delivery'),
+
+    -- Row 3
+    ('2023-01-03', 1, 19.99, 'Alice', 'Johnson', 'alice@example.com', 'Book: "The Great Gatsby"', 'Books', 19.99, '789 Oak St', 'Credit Card', 'Delivered', 'Left at the front door'),
+
+    -- Row 4
+    ('2023-01-04', 4, 179.96, 'Bob', 'Williams', 'bob@example.com', 'Smartphone', 'Electronics', 44.99, '101 Pine St', 'Credit Card', 'Shipped', 'No special notes'),
+
+    -- Row 5
+    ('2023-01-05', 2, 79.98, 'Ella', 'Martinez', 'ella@example.com', 'Coffee Maker', 'Appliances', 39.99, '202 Cedar St', 'PayPal', 'Processing', 'Call before delivery'),
+
+    -- Row 6
+    ('2023-01-06', 3, 89.97, 'William', 'Brown', 'william@example.com', 'Jeans', 'Clothing', 34.99, '303 Birch St', 'Credit Card', 'Delivered', 'Left at the front door'),
+
+    -- Row 7
+    ('2023-01-07', 1, 29.99, 'Olivia', 'Jones', 'olivia@example.com', 'Tablet', 'Electronics', 299.99, '404 Maple St', 'PayPal', 'Shipped', 'No special notes'),
+
+    -- Row 8
+    ('2023-01-08', 2, 59.98, 'James', 'Anderson', 'james@example.com', 'Blender', 'Appliances', 29.99, '505 Redwood St', 'Credit Card', 'Processing', 'Call before delivery'),
+
+    -- Row 9
+    ('2023-01-09', 1, 49.99, 'Sophia', 'Harris', 'sophia@example.com', 'Headphones', 'Electronics', 99.99, '606 Willow St', 'Credit Card', 'Delivered', 'Left at the front door'),
+
+    -- Row 10
+    ('2023-01-10', 3, 69.97, 'Liam', 'Clark', 'liam@example.com', 'Sweater', 'Clothing', 49.99, '707 Pine St', 'PayPal', 'Shipped', 'No special notes');
+
+
+
+
+-- Update the "ProductName" and "ProductPrice" for a specific order.
+-- In this example, we are updating the data for the order with OrderID = 3.
+
+UPDATE orders
+SET 
+    ProductName = 'Updated Book: "The Great Gatsby"', -- New product name
+    ProductPrice = 24.99 -- New product price
+WHERE 
+    OrderID = 3; -- Specify the order to update based on OrderID
