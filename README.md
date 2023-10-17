@@ -7,6 +7,7 @@ This project is a comprehensive data reporting solution designed for the TechRum
 **Automated Data Refresh and Power Automate:**
 ▪ The heartbeat of our solution is its seamless data refresh mechanism, automated through Power Automate. This ensures that our reports always reflect the latest information, providing real-time insights.
 ▪ Power Automate Integration: We've integrated Power Automate, a robust workflow automation tool, into our solution. Power Automate allows us to set up triggers that initiate data refresh based on predefined conditions.
+
 **What-If Scenario -Enabling Write-Back Functionality:**
 ▪ Leveraging dynamic "What If" scenarios (Enabling Write back functionality), users can visualize various outcomes instantly. Moreover, our innovation extends further with PowerApps write-back integration, enabling users to collaboratively modify data within Power BI, solidifying a seamless and empowering reporting ecosystem.
 
