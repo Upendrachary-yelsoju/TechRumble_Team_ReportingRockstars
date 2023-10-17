@@ -4,6 +4,7 @@
 **Project Name:** BI REPORTING
 ## Description
 This project is a comprehensive data reporting solution designed for the TechRumble Hackathon. It addresses the need for real time data  reporting, and data input capabilities. The solution includes a dimensional data model, Power BI reports, automatic data refresh through Power Automate, and user data input via PowerApps. It aims to streamline data reporting processes and enhance user interaction with data.
+
 **Automated Data Refresh and Power Automate:**
 ▪ The heartbeat of our solution is its seamless data refresh mechanism, automated through Power Automate. This ensures that our reports always reflect the latest information, providing real-time insights.
 ▪ Power Automate Integration: We've integrated Power Automate, a robust workflow automation tool, into our solution. Power Automate allows us to set up triggers that initiate data refresh based on predefined conditions.
