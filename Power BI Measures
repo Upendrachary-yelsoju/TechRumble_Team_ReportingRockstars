@@ -1,0 +1,15 @@
+measures----
+Current Year Sales:
+CY Sales = 
+VAR CY =
+    MAX (TimeDim[Year] )
+RETURN
+    CALCULATE ( SUM ( ProductDim[TotalAmount] ), TimeDim[Year] = CY )
+
+## Previous Year Sales
+PY Sales = CALCULATE([CY Sales],SAMEPERIODLASTYEAR(TimeDim[Date]))
+
+##Total Orders Recievd
+Total Orders Recievd = COUNT(orders[OrderID])
+YoY Sales Growth% = DIVIDE([CY Sales]-[PY Sales],[PY Sales],BLANK())
+
