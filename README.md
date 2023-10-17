@@ -4,6 +4,11 @@
 **Project Name:** BI REPORTING
 ## Description
 This project is a comprehensive data reporting solution designed for the TechRumble Hackathon. It addresses the need for real time data  reporting, and data input capabilities. The solution includes a dimensional data model, Power BI reports, automatic data refresh through Power Automate, and user data input via PowerApps. It aims to streamline data reporting processes and enhance user interaction with data.
+**Automated Data Refresh and Power Automate:**
+▪ The heartbeat of our solution is its seamless data refresh mechanism, automated through Power Automate. This ensures that our reports always reflect the latest information, providing real-time insights.
+▪ Power Automate Integration: We've integrated Power Automate, a robust workflow automation tool, into our solution. Power Automate allows us to set up triggers that initiate data refresh based on predefined conditions.
+**What-If Scenario -Enabling Write-Back Functionality:**
+▪ Leveraging dynamic "What If" scenarios (Enabling Write back functionality), users can visualize various outcomes instantly. Moreover, our innovation extends further with PowerApps write-back integration, enabling users to collaboratively modify data within Power BI, solidifying a seamless and empowering reporting ecosystem.
 
 ## Features
 - **Dimensional Data Model**: A robust data model designed to provide a structured and efficient data foundation.
@@ -12,8 +17,13 @@ This project is a comprehensive data reporting solution designed for the TechRum
   ![image](https://github.com/Upendrachary-yelsoju/TechRumble_Team_ReportingRockstars/assets/137254163/725bdc4a-5ecf-4ae0-8590-204c0ae97c4b)
 - **Power Automate Integration**: An automated workflow that ensures Power BI reports are always up-to-date when data changes occur.
   ![image](https://github.com/Upendrachary-yelsoju/TechRumble_Team_ReportingRockstars/assets/137254163/2cca1ffe-cea7-46e5-8cb5-f5957d90da7f)
-
 - **PowerApps Integration**: A user-friendly interface allowing users to input, edit, and delete data, with seamless integration into Power BI reports.
+## Overall Technical Architecture
+![image](https://github.com/Upendrachary-yelsoju/TechRumble_Team_ReportingRockstars/assets/137254163/0bbda846-7e09-401f-964f-9b4d3cc9bd6e)
+1.ETL -Extracting transforming and Loading Data into SQL dB from AWS S 3 bucket
+2.Getting the data from SQL server to power BI and then generating the comparative reports for the data
+3.Automating Refreshing Process Configuring the SQL triggers “when an item is modified”modified”//“when an item is created” in power automate and then Configuring the action for power bi refresh
+4.Write back to power bi dashboard dragging the power apps from power bi visuals then selecting the necessary columns creating an app by selecting the same SQL dB as a source Now the interface to enter the inputs will be reflected in to power bi dashboard The visuals of reports changes whenever there is a change in data
 
   ## Table of Contents
 - [Installation Instructions](#installation-instructions)
