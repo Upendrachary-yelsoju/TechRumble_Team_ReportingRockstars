@@ -11,7 +11,8 @@ This project is a comprehensive data reporting solution designed for the TechRum
 - **Power BI Reports**: A collection of visually appealing and insightful reports that transform raw data into meaningful insights.
   ![image](https://github.com/Upendrachary-yelsoju/TechRumble_Team_ReportingRockstars/assets/137254163/725bdc4a-5ecf-4ae0-8590-204c0ae97c4b)
 - **Power Automate Integration**: An automated workflow that ensures Power BI reports are always up-to-date when data changes occur.
-  
+  ![image](https://github.com/Upendrachary-yelsoju/TechRumble_Team_ReportingRockstars/assets/137254163/2cca1ffe-cea7-46e5-8cb5-f5957d90da7f)
+
 - **PowerApps Integration**: A user-friendly interface allowing users to input, edit, and delete data, with seamless integration into Power BI reports.
 
   ## Table of Contents
